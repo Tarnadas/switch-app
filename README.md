@@ -14,3 +14,8 @@ Uses [egui with SDL2 and OpenGL](https://github.com/ArjunNair/egui_sdl2_gl.git).
 - Build ELF from source: `cargo +horizon build --target aarch64-unknown-horizon --release`
 - Install [linkle](https://github.com/MegatonHammer/linkle): `cargo install --features=binaries linkle`
 - Create an NRO: `linkle nro --nacp-path nacp.json target/aarch64-unknown-horizon/release/switch-app output.nro`
+
+## Status
+
+- not working on emulator
+- untested on real hardware
