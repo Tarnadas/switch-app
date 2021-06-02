@@ -1,0 +1,18 @@
+[target.aarch64-none-elf.dependencies.core]
+stage = 0
+# path = "../rust-std-skyline/library/core"
+
+[target.aarch64-none-elf.dependencies.alloc]
+stage = 1
+# path = "../rust-std-skyline/library/alloc"
+
+[target.aarch64-none-elf.dependencies.libc]
+default-features = false
+features = ["align", "rustc-dep-of-std"]
+stage = 2
+
+[target.aarch64-none-elf.dependencies.std]
+default-features = false
+features = ["panic-unwind"]
+path = "../rust/library/std"
+stage = 3
